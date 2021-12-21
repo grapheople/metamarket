@@ -69,7 +69,9 @@
                     </from>
                     <to>
                         <image>registry.hub.docker.com/grapheople/metamarket</image>
-                        <tag>${project.version}.${build.number}</tag>
+                        <tags>
+                            <tag>${project.version}.${build.number}</tag>
+                        </tags>
                     </to>
                     <container>
                         <ports>
