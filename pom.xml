@@ -6,7 +6,7 @@
 
     <groupId>com.grapheople.prod</groupId>
     <artifactId>metamarket</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -15,7 +15,8 @@
     </parent>
 
     <properties>
-            <java.version>11</java.version>
+        <java.version>11</java.version>
+        <build.number>LOCAL_BUILD</build.number>
     </properties>
 
     <dependencies>
@@ -68,6 +69,7 @@
                     </from>
                     <to>
                         <image>registry.hub.docker.com/grapheople/metamarket</image>
+                        <tag>${project.version}.${build.number}</tag>
                     </to>
                     <container>
                         <ports>
