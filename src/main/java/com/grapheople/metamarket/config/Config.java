@@ -13,8 +13,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  * Created by 지성인 on 2021-12-04.
  */
 @Configuration
-@EnableEncryptableProperties
-@EnableJpaRepositories(basePackages = "com.grapheople.metamarket.repository")
 public class Config {
     @Value("${jasypt.encryptor.password}")
     private String password;
