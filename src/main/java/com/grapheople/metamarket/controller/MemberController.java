@@ -3,6 +3,7 @@ package com.grapheople.metamarket.controller;
 import com.grapheople.metamarket.model.entity.Member;
 import com.grapheople.metamarket.model.param.MemberParam;
 import com.grapheople.metamarket.repository.MemberRepository;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
@@ -17,6 +18,7 @@ import java.util.List;
  */
 @RequestMapping("/api/v1/member")
 @RestController
+@Tag(name = "멤버관리 API")
 @AllArgsConstructor
 @Slf4j
 public class MemberController {
